@@ -9,8 +9,8 @@ const TaskForm = ({ task, onSubmit, onCancel }) => {
         description: "",
         status: "pending",
         due_date: "",
-        assigned_to: "",
-        oncall_team: "",
+        assigned_to: "1",
+        oncall_team: "meta_verified",
     });
 
     const [users, setUsers] = useState([]);
@@ -54,8 +54,8 @@ const TaskForm = ({ task, onSubmit, onCancel }) => {
                 description: "",
                 status: "pending",
                 due_date: "",
-                assigned_to: "",
-                oncall_team: "",
+                assigned_to: "1",
+                oncall_team: "meta_verified",
             });
         }
         fetchTeams(); // Fetch users when the component mounts
