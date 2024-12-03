@@ -7,10 +7,10 @@ const TaskForm = ({ task, onSubmit, onCancel }) => {
     const [formData, setFormData] = useState({
         title: "",
         description: "",
-        status: "",
+        status: "pending",
         due_date: "",
-        assigned_to: "1",
-        oncall_team: "meta_verified",
+        assigned_to: "",
+        oncall_team: "",
     });
 
     const [users, setUsers] = useState([]);
@@ -54,12 +54,12 @@ const TaskForm = ({ task, onSubmit, onCancel }) => {
                 description: "",
                 status: "pending",
                 due_date: "",
-                assigned_to: "1",
-                oncall_team: "meta_verified",
+                assigned_to: "",
+                oncall_team: "",
             });
-            fetchTeams(); // Fetch users when the component mounts
-            fetchUsers(); // Fetch users when the component mounts
         }
+        fetchTeams(); // Fetch users when the component mounts
+        fetchUsers(); // Fetch users when the component mounts
     }, [task]);
 
     const handleChange = (e) => {
