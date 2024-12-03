@@ -28,4 +28,12 @@ For a task management web app, **Read Committed isolation** is likely the best c
 
 ---
 
-## Lessons Learne
+## Lessons Learned:
+- **Create a good database schema** at the beginning with thorough thought. It is hard to modify a database after production. Database migrations are very difficult.
+- **Have flexible APIs** with multiple endpoints for different queries.
+
+---
+
+## Technologies Used:
+- **Stored Procedures**: Used to filter for tasks before certain dates, and filter for overdue tasks using raw SQL.
+- **Django API**: Provides ORM access to the database for easy data queries and CRUD actions. The Django API uses ORM to sanitize user input and ensure that no invalid data is written to the database.
