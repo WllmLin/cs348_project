@@ -36,4 +36,4 @@ For a task management web app, **Read Committed isolation** is likely the best c
 
 ## Technologies Used:
 - **Stored Procedures**: Used to filter for tasks before certain dates, and filter for overdue tasks using raw SQL.
-- **Django API**: Provides ORM access to the database for easy data queries and CRUD actions. The Django API uses ORM to sanitize user input and ensure that no invalid data is written to the database.
+- **Django API**: Provides ORM access to the database for easy data queries and CRUD actions. The Django API uses ORM to sanitize user input and ensure that no invalid data is written to the database. I also checked the input of date to make sure it was a valid date before performing orm querying.
