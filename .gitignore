@@ -21,3 +21,5 @@ cs348/.env.production.local
 cs348/npm-debug.log*
 cs348/yarn-debug.log*
 cs348/yarn-error.log*
+
+backend/db.sqlite3
