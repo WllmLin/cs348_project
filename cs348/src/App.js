@@ -50,7 +50,7 @@ const App = () => {
             <button
                 type="button"
                 className="btn btn-primary me-3"
-                onClick={openModal}
+                onClick={() => { setTaskToEdit(null); openModal(); }}
             >
                 Add Task
             </button>
